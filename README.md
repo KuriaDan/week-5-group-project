@@ -1,6 +1,6 @@
-# Project Title
+# ANALYSIS OF ELECTRICITY PRODUCTION IN KENYA FROM 2010-2014
 
-One Paragraph of project description goes here
+The energy sector in Kenya is largely dominated by petroleum and electricity, with wood fuel providing the basic energy needs of the rural communities, urban poor, and the informal sector. An analysis of the national energy shows heavy dependency on wood fuel and other biomass that account for 68% of the total energy consumption (petroleum 22%, electricity 9%, others account for 1%)
 
 ## Getting Started
 
@@ -8,81 +8,36 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+pandas
+numpy
 
 ```
-Give examples
+import pandas as pd
+import numpy as np
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+import pandas as pd
+import numpy as n
 
 ```
-until finished
 ```
+4. Data Sourcing
+The project began with the sourcing/collecting of dataset to be used for analysis. We sourced our dataset from data.world. According to the website the origin of the dataset was http://opendataforafrica.org/dqoksbf/african-regional-energy-statistics-2014 
+5. Data Preparation and Quality
+Data Selection: We dropped the region column because it was unnecessary for our analysis.  
+6. Data Cleaning: 
+We converted the column names to lowercase to ensure uniformity of the column names in the dataset. 
+We checked for duplicate and null values in the dataset and found none. 
+The Region column was dropped from the dataset as it invalid for the analysis. We selected only the rows whose regionname was Kenya and East Africa in order to work with a smaller dataframe. 
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Daniel Thuku Kuria
+Cecilia Wanja
+Sharon Nzaya
+Brian Ouma
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
